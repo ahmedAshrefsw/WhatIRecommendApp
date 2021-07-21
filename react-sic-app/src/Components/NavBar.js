@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return     <nav
@@ -13,23 +14,20 @@ const NavBar = () => {
   <div class="container-fluid">
     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link fs-1 text-white" href="./SD.html"
-          >||Self Development||</a
-        >
+        <Link to="/selfDevelopment" class="nav-link fs-1 text-white"
+          >||Self Development||</Link>
       </li>
       <li class="nav-item">
-        <a class="nav-link fs-1 text-white" href="./DS.html"
-          >||Data Science||</a
-        >
+        <Link to="/dataScience"
+        class="nav-link fs-1 text-white" 
+          >||Data Science||</Link>
       </li>
 
       <li class="nav-item">
-        <a
+        <Link to="softwareEngineering"
           class="nav-link fs-1 text-white"
           aria-current="page"
-          href="./index.html"
-          >||Software Engineering||</a
-        >
+          >||Software Engineering||</Link>
       </li>
     </ul>
   </div>
